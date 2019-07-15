@@ -17,7 +17,7 @@ public class Word_Ladder_II {
         return ladders;
     }
 
-    // 将得图从end -> start 得到所有结果
+   
     private void dfs(List<List<String>> ladders, List<String> path, String cur, String start,
                 Map<String, Integer> distance, Map<String, List<String>> map) {
         if (cur.equals(start)) {
@@ -34,7 +34,7 @@ public class Word_Ladder_II {
         path.remove(path.size()-1);
     }
 
-    // 构建图，通过bfs得到层次结构
+    // for test
     private void bfs(Map<String, List<String>> map, Map<String, Integer> distance, String start,
                      String end, Set<String> dict) {
         Queue<String> q = new LinkedList<String>();
